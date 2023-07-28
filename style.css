@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.wrapper, 
+body , 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    min-height: 100vh;
+    background: #4a98f7;
+    background-image: url(./assets/pexels-monoar-rahman-100733.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper{
+    background: #fffdfd;
+    width: 440px;
+    padding: 30px 30px 38px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.wrapper img{
+    max-width: 103px;
+}
+
+.wrapper h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.wrapper .container{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wrapper .container.disabled{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.container .column{
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: calc(100% / 3 - 5px);
+}
+
+.column select{
+    outline: none;
+    border: none;
+    height: 53px;
+    width: 100%;
+    font-size: 19px;
+}
+
+.wrapper button{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 17px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    background: #242802;
+    color: #fff;
+    cursor: pointer;
+}
